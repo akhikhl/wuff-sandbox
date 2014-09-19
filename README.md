@@ -2,7 +2,7 @@
 
 Hello guys,
 
-This repo is a sandbox for incubating Wuff features.
+This repo is a sandbox for testing incubating features of [Wuff project](https://github.com/akhikhl/wuff).
 
 All projects here use snapshot version of Wuff from local maven repository or from jfrog repository.
 
