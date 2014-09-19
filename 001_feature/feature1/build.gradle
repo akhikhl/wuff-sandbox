@@ -1,0 +1,6 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-feature'
+
+dependencies {
+  feature "${eclipseMavenGroup}:org.eclipse.core.runtime:+"
+  feature "${eclipseMavenGroup}:org.eclipse.jface:+"  
+}

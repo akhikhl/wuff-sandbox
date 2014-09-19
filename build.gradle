@@ -1,0 +1,22 @@
+// we don't manage examples in a project tree, because each example is designed
+// as completely self-sufficient project, allowing isolated build.
+
+task('build')
+task('clean')
+
+projectDir.listFiles({ new File(it, 'build.gradle').isFile() } as FileFilter).sort { it.name }.each { File subDir ->
+
+  def buildTask = task('build_' + subDir.name, type: GradleBuild) {
+    dir = subDir
+    tasks = [ 'build' ]
+  }
+  tasks.build.dependsOn buildTask
+  
+  def cleanTask = task('clean_' + subDir.name, type: GradleBuild) {
+    dir = subDir
+    tasks = [ 'clean' ]
+  }
+  tasks.clean.dependsOn cleanTask
+  buildTask.mustRunAfter cleanTask
+}
+

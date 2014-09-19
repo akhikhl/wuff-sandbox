@@ -1,0 +1,10 @@
+build
+.gradle
+.groovy
+.settings
+.directory
+.nb-gradle*
+*.iml
+.idea
+*.class
+libs/wuff-plugin/bin/
