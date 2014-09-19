@@ -4,7 +4,7 @@ Notes:
 
 1. Feature generation is enabled by applying plugin 'org.akhikhl.wuff.eclipse-feature'.
 
-2. 'java' or 'groovy' plugins are nor required neither prohibited.
+2. 'java' and 'groovy' plugins are neither required nor prohibited.
 
 3. The feature automatically includes bundles from special configuration 'feature' (see dependencies section).
 
