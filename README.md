@@ -32,4 +32,4 @@ Each time you build Wuff (or just wuff-plugin), it gets installed to local maven
 
 ## How to run/study examples
 
-Best of all - in alphabetical order.
+Best of all - in alphabetical order. Every example is supplied with README.md, explaining the purpose and particular details.
