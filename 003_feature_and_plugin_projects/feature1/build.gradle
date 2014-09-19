@@ -4,5 +4,7 @@ version = '1.0.1'
 
 dependencies {
   feature "${eclipseMavenGroup}:org.eclipse.core.runtime:+"
-  feature "${eclipseMavenGroup}:org.eclipse.jface:+"  
+  feature "${eclipseMavenGroup}:org.eclipse.jface:+"
+  feature project(':testplugin1')
+  feature project(':testplugin2')
 }

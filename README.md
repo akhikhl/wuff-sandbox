@@ -30,3 +30,6 @@ gradle build
 
 Each time you build Wuff (or just wuff-plugin), it gets installed to local maven repository, so that wuff-sandbox can immediately use modified code (without publishing to jfrog).
 
+## How to run/study examples
+
+Best of all - in alphabetical order.

@@ -1,0 +1,19 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-bundle'
+apply plugin: 'org.akhikhl.wuff.eclipse-feature'
+
+version = '1.0.1'
+
+dependencies {
+  feature "${eclipseMavenGroup}:org.eclipse.core.runtime:+"
+  feature "${eclipseMavenGroup}:org.eclipse.jface:+"  
+}
+
+wuff {
+  feature {
+    id = 'myfeature'
+    version = '1.0.0'
+    label = 'my feature'
+    copyright = 'Me. All rights reserved.'
+    licenseText = 'BLA BLA LICENSE. LICENSE TEXT GOES HERE.'
+  }
+}

@@ -1,3 +1,4 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-bundle'
 apply plugin: 'org.akhikhl.wuff.eclipse-feature'
 
 version = '1.0.1'
@@ -5,4 +6,12 @@ version = '1.0.1'
 dependencies {
   feature "${eclipseMavenGroup}:org.eclipse.core.runtime:+"
   feature "${eclipseMavenGroup}:org.eclipse.jface:+"  
+  feature project // reference to this project
+}
+
+wuff {
+  feature {
+    id = 'myfeature'
+    version = '1.0.0'
+  }
 }
