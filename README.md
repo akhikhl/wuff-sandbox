@@ -28,5 +28,5 @@ cd wuff-sandbox
 gradle build
 ```
 
-Each time you build Wuff (or just wuff-plugin), it gets installed to local maven repository, so that wuff-sandbox can immediately use modified code.
+Each time you build Wuff (or just wuff-plugin), it gets installed to local maven repository, so that wuff-sandbox can immediately use modified code (without publishing to jfrog).
 
