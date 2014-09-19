@@ -4,7 +4,7 @@ Hello guys,
 
 This repo is a sandbox for incubating Wuff features.
 
-All projects use snapshot version of Wuff from local maven repository or from jfrog repository.
+All projects here use snapshot version of Wuff from local maven repository or from jfrog repository.
 
 ## Usage
 
