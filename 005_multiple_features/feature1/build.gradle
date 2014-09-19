@@ -1,0 +1,36 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-feature'
+
+version = '1.0.1'
+
+configurations {
+  f1 {
+    transitive = false
+  }
+  f2 {
+    transitive = false
+  }
+}
+
+dependencies {
+  f1 "${eclipseMavenGroup}:org.eclipse.core.runtime:+"
+  f1 project(':testplugin1')
+  f1 project(':testplugin2')
+   
+  f2 "${eclipseMavenGroup}:org.eclipse.jface:+"
+  f2 project(':testplugin3')
+  f2 project(':testplugin4')
+}
+
+wuff {
+  features {
+    feature('myfeature1') {
+      version = '1.1.1'
+      configuration = 'f1'
+    }
+    feature('myfeature2') {
+      version = '1.1.2'
+      configuration = 'f2'
+    }
+  }
+}
+
