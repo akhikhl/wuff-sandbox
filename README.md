@@ -1,10 +1,8 @@
 # wuff-sandbox
 
-Hello guys,
-
 This repo is a sandbox for testing incubating features of [Wuff project](https://github.com/akhikhl/wuff).
 
-All projects here use snapshot version of Wuff from local maven repository or from jfrog repository.
+All projects represented here use snapshot version of Wuff from local maven repository or from jfrog repository.
 
 ## Usage
 
@@ -32,4 +30,4 @@ Each time you build Wuff (or just wuff-plugin), it gets installed to local maven
 
 ## How to run/study examples
 
-Best of all - in alphabetical order. Every example is supplied with README.md, explaining the purpose and particular details.
+Best of all - in alphabetical order. Every example is supplied with README.md, explaining the purpose, the syntax and the effects.
