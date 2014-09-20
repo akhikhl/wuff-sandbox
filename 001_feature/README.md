@@ -1,4 +1,4 @@
-This is the simplest example of Wuff-driven feature.
+This is the simplest example of Wuff-driven feature. See interesting code in [feature1/build.gradle](feature1/build.gradle).
 
 Notes:
 
