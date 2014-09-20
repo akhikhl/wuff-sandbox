@@ -1,4 +1,4 @@
-Here we demonstrate, how feature properties can be configured in build.gradle.
+Here we demonstrate, how feature properties can be configured in [build.gradle](feature1/build.gradle).
 
 Notes:
 
