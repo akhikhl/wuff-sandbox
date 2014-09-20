@@ -9,7 +9,7 @@ Notes:
   ```groovy
   wuff {
     feature('myfeature') { 
-      \\ ...
+      // ...
     }
   }
   ```
@@ -19,7 +19,7 @@ Notes:
   ```groovy
   wuff {
     feature { 
-      \\ ...
+      // ...
     }
   }
   ```
@@ -29,10 +29,10 @@ Notes:
   ```groovy
   wuff {
     feature('myfeature') { 
-      \\ ...
+      // ...
     }
     feature('myfeature') { 
-      \\ still the same feature
+      // still the same feature
     }
   }
   ```
