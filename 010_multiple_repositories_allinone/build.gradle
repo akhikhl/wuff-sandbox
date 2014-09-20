@@ -1,0 +1,18 @@
+buildscript {
+  repositories {
+    mavenLocal()
+    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+    jcenter()
+  }
+
+  dependencies {
+    classpath "org.akhikhl.wuff:wuff-plugin:$wuff_version"
+  }
+}
+
+repositories {
+  mavenLocal()
+  maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+  jcenter()
+}
+

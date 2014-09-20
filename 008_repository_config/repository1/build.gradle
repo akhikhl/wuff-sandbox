@@ -1,0 +1,21 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-repository'
+
+dependencies {
+  repository project(':feature1')
+}
+
+version = '1.0.0'
+
+wuff {
+  repository('myrepository') {
+    version = '1.2.3'
+    url = 'http://www.example.com'
+    description = 'description of my repository'
+    category('some category') {
+      label = 'label of some category'
+      description = 'description of some category'
+      // by default a category imports all feature projects belonging to 'repository' configuration
+    }
+  }
+}
+

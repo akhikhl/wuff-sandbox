@@ -1,0 +1,112 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-feature'
+apply plugin: 'org.akhikhl.wuff.eclipse-repository'
+
+configurations {
+  f1 { transitive = false }
+  f2 { transitive = false }
+  f3 { transitive = false }
+  f4 { transitive = false }
+  f5 { transitive = false }
+  f6 { transitive = false }
+  f7 { transitive = false }
+  f8 { transitive = false }
+}
+
+dependencies {
+  f1 "${eclipseMavenGroup}:org.eclipse.core.runtime:+"
+  f1 "${eclipseMavenGroup}:org.eclipse.jface:+"  
+  
+  f2 "${eclipseMavenGroup}:ch.qos.logback.classic:+"
+  f2 "${eclipseMavenGroup}:ch.qos.logback.core:+"  
+  f2 "${eclipseMavenGroup}:ch.qos.logback.slf4j:+"  
+  
+  f3 "${eclipseMavenGroup}:org.eclipse.ui.forms:+"
+  f3 "${eclipseMavenGroup}:org.eclipse.ui.editors:+"  
+  
+  f4 "${eclipseMavenGroup}:org.eclipse.ui.views:+"  
+  f4 "${eclipseMavenGroup}:org.eclipse.ui.workbench:+"
+  
+  f5 "${eclipseMavenGroup}:org.eclipse.team.core:+"
+  f5 "${eclipseMavenGroup}:org.eclipse.team.ui:+"  
+  
+  f6 "${eclipseMavenGroup}:org.eclipse.ui.console:+"
+  f6 "${eclipseMavenGroup}:org.eclipse.ui.externaltools:+"  
+  
+  f7 "${eclipseMavenGroup}:org.eclipse.wst.common.core:+"
+  f7 "${eclipseMavenGroup}:org.eclipse.wst.common.emf:+"
+  
+  f8 "${eclipseMavenGroup}:org.eclipse.wst.web:+"  
+  f8 "${eclipseMavenGroup}:org.eclipse.wst.web.ui:+"
+}
+
+version = '1.0.0'
+
+wuff {
+  feature('feature1') {
+    version = '1.0.1'
+    configuration = 'f1'
+  }
+  feature('feature2') {
+    version = '1.0.2'
+    configuration = 'f2'
+  }
+  feature('feature3') {
+    version = '1.0.3'
+    configuration = 'f3'
+  }
+  feature('feature4') {
+    version = '1.0.4'
+    configuration = 'f4'
+  }
+  feature('feature5') {
+    version = '1.0.5'
+    configuration = 'f5'
+  }
+  feature('feature6') {
+    version = '1.0.6'
+    configuration = 'f6'
+  }
+  feature('feature7') {
+    version = '1.0.7'
+    configuration = 'f7'
+  }
+  feature('feature8') {
+    version = '1.0.8'
+    configuration = 'f8'
+  }
+  repository('myrepository1') {
+    version = '1.2.3'
+    url = 'http://www.example.com'
+    description = 'description of my repository'
+    category('categoryA') {
+      label = 'label of some category'
+      description = 'description of some category'
+      feature 'feature1'
+      feature 'feature2'
+    }
+    category('categoryB') {
+      label = 'label of another category'
+      description = 'description of another category'
+      feature 'feature3'
+      feature 'feature4'
+    }
+  }
+  repository('myrepository2') {
+    version = '4.5.6'
+    url = 'http://www.example.com'
+    description = 'description of my second repository'
+    category('categoryC') {
+      label = 'label of some category 2'
+      description = 'description of some category 2'
+      feature 'feature5'
+      feature 'feature6'
+    }
+    category('categoryD') {
+      label = 'label of another category 2'
+      description = 'description of another category 2'
+      feature 'feature7'
+      feature 'feature8'
+    }
+  }
+}
+

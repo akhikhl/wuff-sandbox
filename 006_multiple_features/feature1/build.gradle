@@ -22,15 +22,13 @@ dependencies {
 }
 
 wuff {
-  features {
-    feature('myfeature1') {
-      version = '1.1.1'
-      configuration = 'f1'
-    }
-    feature('myfeature2') {
-      version = '1.1.2'
-      configuration = 'f2'
-    }
+  feature('myfeature1') {
+    version = '1.1.1'
+    configuration = 'f1'
+  }
+  feature('myfeature2') {
+    version = '1.1.2'
+    configuration = 'f2'
   }
 }
 

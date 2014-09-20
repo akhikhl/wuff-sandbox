@@ -1,4 +1,4 @@
-Here we demonstrate how to build eclipse feature from eclipse-plugin projects.
+Here we demonstrate how to include eclipse-plugin projects into the feature.
 
 Notes:
 

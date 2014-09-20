@@ -1,0 +1,8 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-feature'
+
+version = '1.0.5'
+
+dependencies {
+  feature "${eclipseMavenGroup}:org.eclipse.team.core:+"
+  feature "${eclipseMavenGroup}:org.eclipse.team.ui:+"  
+}

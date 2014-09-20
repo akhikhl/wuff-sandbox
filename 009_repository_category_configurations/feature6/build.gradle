@@ -1,0 +1,8 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-feature'
+
+version = '1.0.6'
+
+dependencies {
+  feature "${eclipseMavenGroup}:org.eclipse.ui.console:+"
+  feature "${eclipseMavenGroup}:org.eclipse.ui.externaltools:+"  
+}

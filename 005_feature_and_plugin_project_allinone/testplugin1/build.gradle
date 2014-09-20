@@ -10,8 +10,5 @@ dependencies {
 }
 
 wuff {
-  feature {
-    id = 'myfeature'
-    version = '1.0.0'
-  }
+  feature 'myfeature'
 }

@@ -1,0 +1,58 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-repository'
+
+configurations {
+  c1 { transitive = false }
+  c2 { transitive = false }
+  c3 { transitive = false }
+  c4 { transitive = false }
+}
+
+dependencies {
+  c1 project(':feature1')
+  c1 project(':feature2')
+  
+  c2 project(':feature3')
+  c2 project(':feature4')
+  
+  c3 project(':feature5')
+  c3 project(':feature6')
+  
+  c4 project(':feature7')
+  c4 project(':feature8')
+}
+
+version = '1.0.0'
+
+wuff {
+  repository('myrepository1') {
+    version = '1.2.3'
+    url = 'http://www.example.com'
+    description = 'description of my repository'
+    category('categoryA') {
+      label = 'label of some category'
+      description = 'description of some category'
+      configuration = 'c1'
+    }
+    category('categoryB') {
+      label = 'label of another category'
+      description = 'description of another category'
+      configuration = 'c2'
+    }
+  }
+  repository('myrepository2') {
+    version = '4.5.6'
+    url = 'http://www.example.com'
+    description = 'description of my second repository'
+    category('categoryC') {
+      label = 'label of some category 2'
+      description = 'description of some category 2'
+      configuration = 'c3'
+    }
+    category('categoryD') {
+      label = 'label of another category 2'
+      description = 'description of another category 2'
+      configuration = 'c4'
+    }
+  }
+}
+

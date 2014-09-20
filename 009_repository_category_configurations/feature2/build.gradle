@@ -1,0 +1,9 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-feature'
+
+version = '1.0.2'
+
+dependencies {
+  feature "${eclipseMavenGroup}:ch.qos.logback.classic:+"
+  feature "${eclipseMavenGroup}:ch.qos.logback.core:+"  
+  feature "${eclipseMavenGroup}:ch.qos.logback.slf4j:+"  
+}

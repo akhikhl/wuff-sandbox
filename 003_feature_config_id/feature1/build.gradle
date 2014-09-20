@@ -8,7 +8,7 @@ dependencies {
 }
 
 wuff {
-  feature {
+  feature('myfeature') {
     version = '1.0.1'
     label = 'my feature'
     copyright = 'Me. All rights reserved.'
