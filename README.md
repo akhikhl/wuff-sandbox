@@ -1,13 +1,10 @@
 # wuff-sandbox
 
-This repo is a sandbox for testing incubating features of [Wuff project](https://github.com/akhikhl/wuff).
+Here we demonstrate various uses of incubating feature of [Wuff project](https://github.com/akhikhl/wuff): Eclipse Feature and Repository generation.
 
 All projects represented here use snapshot version of Wuff from local maven repository or from jfrog repository.
 
-Currently all projects in the sandbox are demonstrating one new feature of Wuff: Eclipse Feature and Repository generation.
-
 Your critique, comments and test results are very much welcome.
-
 
 ## Usage
 
